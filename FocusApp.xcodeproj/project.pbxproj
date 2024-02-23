@@ -24,6 +24,10 @@
 		2D5981E22B88843F00E85413 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5981E12B88843F00E85413 /* Animator.swift */; };
 		2D5981E42B88845400E85413 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5981E32B88845400E85413 /* Router.swift */; };
 		2D5981E72B88852D00E85413 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5981E62B88852D00E85413 /* Closures.swift */; };
+		2D5982102B88A25F00E85413 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D59820F2B88A25F00E85413 /* SettingsView.swift */; };
+		2D5982152B88A58800E85413 /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D5982122B88A58800E85413 /* Nunito-SemiBold.ttf */; };
+		2D5982162B88A58800E85413 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D5982132B88A58800E85413 /* Nunito-Bold.ttf */; };
+		2D5982172B88A58800E85413 /* Nunito-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D5982142B88A58800E85413 /* Nunito-ExtraBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +50,10 @@
 		2D5981E12B88843F00E85413 /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
 		2D5981E32B88845400E85413 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		2D5981E62B88852D00E85413 /* Closures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
+		2D59820F2B88A25F00E85413 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		2D5982122B88A58800E85413 /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
+		2D5982132B88A58800E85413 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		2D5982142B88A58800E85413 /* Nunito-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBold.ttf"; sourceTree = "<group>"; };
 		C62711FE10D3F0CCF4703BF6 /* Pods-FocusApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FocusApp.release.xcconfig"; path = "Target Support Files/Pods-FocusApp/Pods-FocusApp.release.xcconfig"; sourceTree = "<group>"; };
 		C8869E4D55B4362FFD963B5F /* Pods_FocusApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FocusApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -107,6 +115,8 @@
 		2D5981C42B887D3B00E85413 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				2D5982112B88A57900E85413 /* CustomFonts */,
+				2D59820E2B88A24400E85413 /* UIView */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -114,6 +124,7 @@
 		2D5981C52B887D4800E85413 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				2D59820D2B88A23A00E85413 /* Settings */,
 				2D5981C72B887FAF00E85413 /* Base */,
 				2D1983312B88779D009BC080 /* ViewController.swift */,
 			);
@@ -192,6 +203,31 @@
 			path = Closures;
 			sourceTree = "<group>";
 		};
+		2D59820D2B88A23A00E85413 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		2D59820E2B88A24400E85413 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				2D59820F2B88A25F00E85413 /* SettingsView.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		2D5982112B88A57900E85413 /* CustomFonts */ = {
+			isa = PBXGroup;
+			children = (
+				2D5982132B88A58800E85413 /* Nunito-Bold.ttf */,
+				2D5982142B88A58800E85413 /* Nunito-ExtraBold.ttf */,
+				2D5982122B88A58800E85413 /* Nunito-SemiBold.ttf */,
+			);
+			path = CustomFonts;
+			sourceTree = "<group>";
+		};
 		6CAF7193EC0E9C503B38384C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -261,7 +297,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D5982152B88A58800E85413 /* Nunito-SemiBold.ttf in Resources */,
 				2D19833D2B88779F009BC080 /* LaunchScreen.storyboard in Resources */,
+				2D5982172B88A58800E85413 /* Nunito-ExtraBold.ttf in Resources */,
+				2D5982162B88A58800E85413 /* Nunito-Bold.ttf in Resources */,
 				2D19833A2B88779F009BC080 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +354,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D5982102B88A25F00E85413 /* SettingsView.swift in Sources */,
 				2D5981DA2B8883E000E85413 /* PushTransition.swift in Sources */,
 				2D5981E72B88852D00E85413 /* Closures.swift in Sources */,
 				2D5981D62B8883B700E85413 /* ModalTransition.swift in Sources */,

@@ -14,6 +14,5 @@ target 'FocusApp' do
   
   # UI
   pod 'TinyConstraints', '~> 4.0'
-  pod 'BetterSegmentedControl', '~> 2.0'
 
 end

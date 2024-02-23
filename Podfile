@@ -10,7 +10,6 @@ target 'FocusApp' do
   # Helper
   pod 'MobilliumBuilders', '~> 1.4'
   pod 'Segmentio', '~> 4.1'
-  pod ‘SwiftGen’, ‘6.0’
   
   # UI
   pod 'TinyConstraints', '~> 4.0'

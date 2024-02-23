@@ -1,28 +1,24 @@
 PODS:
   - MobilliumBuilders (1.4.3)
   - Segmentio (4.1)
-  - SwiftGen (6.0.0)
   - TinyConstraints (4.0.2)
 
 DEPENDENCIES:
   - MobilliumBuilders (~> 1.4)
   - Segmentio (~> 4.1)
-  - SwiftGen (= 6.0)
   - TinyConstraints (~> 4.0)
 
 SPEC REPOS:
   trunk:
     - MobilliumBuilders
     - Segmentio
-    - SwiftGen
     - TinyConstraints
 
 SPEC CHECKSUMS:
   MobilliumBuilders: 2171277c225a6b4295d0b29d75b50d4908f093d5
   Segmentio: ab29def64e1bff6e6e9b97671788a99bed3f1d9f
-  SwiftGen: cd0bb0c9838c3fc90b78d35b19f492711b19eb55
   TinyConstraints: 7b7ccc0c485bb3bb47082138ff28bc33cd49897f
 
-PODFILE CHECKSUM: b1ff5fed733bccd2c2e6127abe1ea88a5dd15521
+PODFILE CHECKSUM: 68ce9a75632321169dc61523c7aef5c65bf9a4ae
 
 COCOAPODS: 1.12.1

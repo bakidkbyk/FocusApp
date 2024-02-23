@@ -1,0 +1,24 @@
+PODS:
+  - MobilliumBuilders (1.4.3)
+  - Segmentio (4.1)
+  - TinyConstraints (4.0.2)
+
+DEPENDENCIES:
+  - MobilliumBuilders (~> 1.4)
+  - Segmentio (~> 4.1)
+  - TinyConstraints (~> 4.0)
+
+SPEC REPOS:
+  trunk:
+    - MobilliumBuilders
+    - Segmentio
+    - TinyConstraints
+
+SPEC CHECKSUMS:
+  MobilliumBuilders: 2171277c225a6b4295d0b29d75b50d4908f093d5
+  Segmentio: ab29def64e1bff6e6e9b97671788a99bed3f1d9f
+  TinyConstraints: 7b7ccc0c485bb3bb47082138ff28bc33cd49897f
+
+PODFILE CHECKSUM: 68ce9a75632321169dc61523c7aef5c65bf9a4ae
+
+COCOAPODS: 1.12.1

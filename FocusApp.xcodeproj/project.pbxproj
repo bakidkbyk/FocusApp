@@ -7,25 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29F5FD870A3D72E8D85E9086 /* Pods_FocusApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8869E4D55B4362FFD963B5F /* Pods_FocusApp.framework */; };
 		2D19832E2B88779D009BC080 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D19832D2B88779D009BC080 /* AppDelegate.swift */; };
-		2D1983302B88779D009BC080 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D19832F2B88779D009BC080 /* SceneDelegate.swift */; };
 		2D1983322B88779D009BC080 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1983312B88779D009BC080 /* ViewController.swift */; };
-		2D1983352B88779D009BC080 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D1983332B88779D009BC080 /* Main.storyboard */; };
 		2D1983382B88779D009BC080 /* FocusApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D1983362B88779D009BC080 /* FocusApp.xcdatamodeld */; };
 		2D19833A2B88779F009BC080 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D1983392B88779F009BC080 /* Assets.xcassets */; };
 		2D19833D2B88779F009BC080 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D19833B2B88779F009BC080 /* LaunchScreen.storyboard */; };
+		2D5981C92B887FC700E85413 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5981C82B887FC700E85413 /* BaseViewController.swift */; };
+		2D5981CB2B887FDE00E85413 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5981CA2B887FDE00E85413 /* BaseViewModel.swift */; };
+		2D5981D12B88838600E85413 /* DismissableRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5981D02B88838600E85413 /* DismissableRoute.swift */; };
+		2D5981D62B8883B700E85413 /* ModalTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5981D52B8883B700E85413 /* ModalTransition.swift */; };
+		2D5981D82B8883C900E85413 /* PlaceOnWindowTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5981D72B8883C900E85413 /* PlaceOnWindowTransition.swift */; };
+		2D5981DA2B8883E000E85413 /* PushTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5981D92B8883E000E85413 /* PushTransition.swift */; };
+		2D5981DC2B8883F400E85413 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5981DB2B8883F400E85413 /* Transition.swift */; };
+		2D5981DF2B88840F00E85413 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5981DE2B88840F00E85413 /* AppRouter.swift */; };
+		2D5981E22B88843F00E85413 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5981E12B88843F00E85413 /* Animator.swift */; };
+		2D5981E42B88845400E85413 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5981E32B88845400E85413 /* Router.swift */; };
+		2D5981E72B88852D00E85413 /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5981E62B88852D00E85413 /* Closures.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		253093EB406C4B4E7D0CC1B3 /* Pods-FocusApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FocusApp.debug.xcconfig"; path = "Target Support Files/Pods-FocusApp/Pods-FocusApp.debug.xcconfig"; sourceTree = "<group>"; };
 		2D19832A2B88779D009BC080 /* FocusApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FocusApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D19832D2B88779D009BC080 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2D19832F2B88779D009BC080 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2D1983312B88779D009BC080 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2D1983342B88779D009BC080 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D1983372B88779D009BC080 /* FocusApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FocusApp.xcdatamodel; sourceTree = "<group>"; };
 		2D1983392B88779F009BC080 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D19833C2B88779F009BC080 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D19833E2B88779F009BC080 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D5981C82B887FC700E85413 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		2D5981CA2B887FDE00E85413 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		2D5981D02B88838600E85413 /* DismissableRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissableRoute.swift; sourceTree = "<group>"; };
+		2D5981D52B8883B700E85413 /* ModalTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalTransition.swift; sourceTree = "<group>"; };
+		2D5981D72B8883C900E85413 /* PlaceOnWindowTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceOnWindowTransition.swift; sourceTree = "<group>"; };
+		2D5981D92B8883E000E85413 /* PushTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushTransition.swift; sourceTree = "<group>"; };
+		2D5981DB2B8883F400E85413 /* Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		2D5981DE2B88840F00E85413 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		2D5981E12B88843F00E85413 /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		2D5981E32B88845400E85413 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		2D5981E62B88852D00E85413 /* Closures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
+		C62711FE10D3F0CCF4703BF6 /* Pods-FocusApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FocusApp.release.xcconfig"; path = "Target Support Files/Pods-FocusApp/Pods-FocusApp.release.xcconfig"; sourceTree = "<group>"; };
+		C8869E4D55B4362FFD963B5F /* Pods_FocusApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FocusApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +55,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29F5FD870A3D72E8D85E9086 /* Pods_FocusApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0110CBC18FE308FBF7966CBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8869E4D55B4362FFD963B5F /* Pods_FocusApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2D1983212B88779D009BC080 = {
 			isa = PBXGroup;
 			children = (
 				2D19832C2B88779D009BC080 /* FocusApp */,
 				2D19832B2B88779D009BC080 /* Products */,
+				6CAF7193EC0E9C503B38384C /* Pods */,
+				0110CBC18FE308FBF7966CBD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +91,114 @@
 		2D19832C2B88779D009BC080 /* FocusApp */ = {
 			isa = PBXGroup;
 			children = (
-				2D19832D2B88779D009BC080 /* AppDelegate.swift */,
-				2D19832F2B88779D009BC080 /* SceneDelegate.swift */,
-				2D1983312B88779D009BC080 /* ViewController.swift */,
-				2D1983332B88779D009BC080 /* Main.storyboard */,
+				2D5981E52B88851600E85413 /* Closures */,
+				2D5981CE2B88832000E85413 /* Routing */,
+				2D5981C42B887D3B00E85413 /* UIComponents */,
+				2D5981C62B887D5100E85413 /* AppDelegate */,
+				2D5981C52B887D4800E85413 /* Scenes */,
 				2D1983392B88779F009BC080 /* Assets.xcassets */,
 				2D19833B2B88779F009BC080 /* LaunchScreen.storyboard */,
 				2D19833E2B88779F009BC080 /* Info.plist */,
 				2D1983362B88779D009BC080 /* FocusApp.xcdatamodeld */,
 			);
 			path = FocusApp;
+			sourceTree = "<group>";
+		};
+		2D5981C42B887D3B00E85413 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		2D5981C52B887D4800E85413 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				2D5981C72B887FAF00E85413 /* Base */,
+				2D1983312B88779D009BC080 /* ViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		2D5981C62B887D5100E85413 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				2D19832D2B88779D009BC080 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		2D5981C72B887FAF00E85413 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				2D5981C82B887FC700E85413 /* BaseViewController.swift */,
+				2D5981CA2B887FDE00E85413 /* BaseViewModel.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		2D5981CE2B88832000E85413 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				2D5981E02B88842B00E85413 /* Core */,
+				2D5981DD2B88840000E85413 /* Routers */,
+				2D5981D42B8883A400E85413 /* Transitions */,
+				2D5981CF2B88837500E85413 /* Route */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		2D5981CF2B88837500E85413 /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				2D5981D02B88838600E85413 /* DismissableRoute.swift */,
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
+		2D5981D42B8883A400E85413 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				2D5981D52B8883B700E85413 /* ModalTransition.swift */,
+				2D5981D72B8883C900E85413 /* PlaceOnWindowTransition.swift */,
+				2D5981D92B8883E000E85413 /* PushTransition.swift */,
+				2D5981DB2B8883F400E85413 /* Transition.swift */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		2D5981DD2B88840000E85413 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				2D5981DE2B88840F00E85413 /* AppRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		2D5981E02B88842B00E85413 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2D5981E12B88843F00E85413 /* Animator.swift */,
+				2D5981E32B88845400E85413 /* Router.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2D5981E52B88851600E85413 /* Closures */ = {
+			isa = PBXGroup;
+			children = (
+				2D5981E62B88852D00E85413 /* Closures.swift */,
+			);
+			path = Closures;
+			sourceTree = "<group>";
+		};
+		6CAF7193EC0E9C503B38384C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				253093EB406C4B4E7D0CC1B3 /* Pods-FocusApp.debug.xcconfig */,
+				C62711FE10D3F0CCF4703BF6 /* Pods-FocusApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +208,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D1983412B88779F009BC080 /* Build configuration list for PBXNativeTarget "FocusApp" */;
 			buildPhases = (
+				813DF267C4A2432C449228E5 /* [CP] Check Pods Manifest.lock */,
 				2D1983262B88779D009BC080 /* Sources */,
 				2D1983272B88779D009BC080 /* Frameworks */,
 				2D1983282B88779D009BC080 /* Resources */,
+				034EAC1908D374A11255E2DB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,35 +263,78 @@
 			files = (
 				2D19833D2B88779F009BC080 /* LaunchScreen.storyboard in Resources */,
 				2D19833A2B88779F009BC080 /* Assets.xcassets in Resources */,
-				2D1983352B88779D009BC080 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		034EAC1908D374A11255E2DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FocusApp/Pods-FocusApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FocusApp/Pods-FocusApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FocusApp/Pods-FocusApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		813DF267C4A2432C449228E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FocusApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2D1983262B88779D009BC080 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D5981DA2B8883E000E85413 /* PushTransition.swift in Sources */,
+				2D5981E72B88852D00E85413 /* Closures.swift in Sources */,
+				2D5981D62B8883B700E85413 /* ModalTransition.swift in Sources */,
+				2D5981D82B8883C900E85413 /* PlaceOnWindowTransition.swift in Sources */,
 				2D1983322B88779D009BC080 /* ViewController.swift in Sources */,
+				2D5981DC2B8883F400E85413 /* Transition.swift in Sources */,
+				2D5981CB2B887FDE00E85413 /* BaseViewModel.swift in Sources */,
+				2D5981E22B88843F00E85413 /* Animator.swift in Sources */,
+				2D5981D12B88838600E85413 /* DismissableRoute.swift in Sources */,
+				2D5981DF2B88840F00E85413 /* AppRouter.swift in Sources */,
+				2D5981E42B88845400E85413 /* Router.swift in Sources */,
+				2D5981C92B887FC700E85413 /* BaseViewController.swift in Sources */,
 				2D19832E2B88779D009BC080 /* AppDelegate.swift in Sources */,
 				2D1983382B88779D009BC080 /* FocusApp.xcdatamodeld in Sources */,
-				2D1983302B88779D009BC080 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2D1983332B88779D009BC080 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2D1983342B88779D009BC080 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2D19833B2B88779F009BC080 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -286,6 +462,7 @@
 		};
 		2D1983422B88779F009BC080 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 253093EB406C4B4E7D0CC1B3 /* Pods-FocusApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -296,7 +473,6 @@
 				INFOPLIST_FILE = FocusApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -314,6 +490,7 @@
 		};
 		2D1983432B88779F009BC080 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C62711FE10D3F0CCF4703BF6 /* Pods-FocusApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -324,7 +501,6 @@
 				INFOPLIST_FILE = FocusApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

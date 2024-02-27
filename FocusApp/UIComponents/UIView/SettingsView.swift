@@ -26,13 +26,13 @@ public class SettingsView: UIView {
         .build()
     
     private let contentStackView = UIStackViewBuilder()
-        .axis(.horizontal)
+        .axis(.vertical)
         .spacing(15)
         .build()
     
     private let pomodoroStackView = UIStackViewBuilder()
         .spacing(10)
-        .axis(.vertical)
+        .axis(.horizontal)
         .build()
     
     private let pomodoroTitleLabel = UILabelBuilder()
@@ -46,7 +46,7 @@ public class SettingsView: UIView {
     
     private let shortBreakStackView = UIStackViewBuilder()
         .spacing(10)
-        .axis(.vertical)
+        .axis(.horizontal)
         .build()
     
     private let shortBreakTitleLabel = UILabelBuilder()
@@ -60,7 +60,7 @@ public class SettingsView: UIView {
     
     private let longBreakStackView = UIStackViewBuilder()
         .spacing(10)
-        .axis(.vertical)
+        .axis(.horizontal)
         .build()
     
     private let longBreakTitleLabel = UILabelBuilder()
@@ -82,23 +82,16 @@ public class SettingsView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        configureContents()
         addSubViews()
+        configureContents()
+        setLocalize()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        configureContents()
         addSubViews()
-    }
-    
-    private func configureContents() {
-        settingsTitleLabel.text = "Settings"
-        timeTitleLabel.text = "TIME (MINUTES)"
-        pomodoroTitleLabel.text = "Pomodoro"
-        shortBreakTitleLabel.text = "Short Break"
-        longBreakTitleLabel.text = "Long Break"
-        okButtonAction.setTitle("OK", for: .normal)
+        configureContents()
+        setLocalize()
     }
 }
 
@@ -108,17 +101,20 @@ extension SettingsView {
     private func addSubViews() {
         addSubview(settingsTitleLabel)
         settingsTitleLabel.topToSuperview().constant = 30
-        settingsTitleLabel.centerXToSuperview()
+        settingsTitleLabel.leadingToSuperview().constant = 20
         
         addSubview(seperatorTopView)
-        seperatorTopView.edgesToSuperview(excluding: .bottom, insets: .init(top: 11, left: 0, bottom: 0, right: 0))
+        seperatorTopView.topToBottom(of: settingsTitleLabel).constant = 11
+        seperatorTopView.leadingToSuperview()
+        seperatorTopView.trailingToSuperview()
         
         addSubview(timeTitleLabel)
         timeTitleLabel.topToBottom(of: seperatorTopView).constant = 11
         timeTitleLabel.centerXToSuperview()
         
         addSubview(contentStackView)
-        contentStackView.edgesToSuperview(excluding: .bottom, insets: .init(top: 30, left: 30, bottom: 0, right: 30))
+        contentStackView.edgesToSuperview(excluding: [.top, .bottom], insets: .init(top: 0, left: 30, bottom: 0, right: 30), usingSafeArea: true)
+        contentStackView.topToBottom(of: timeTitleLabel).constant = 18
         
         contentStackView.addArrangedSubview(pomodoroStackView)
         contentStackView.addArrangedSubview(shortBreakStackView)
@@ -134,11 +130,30 @@ extension SettingsView {
         longBreakStackView.addArrangedSubview(longBreakPickerButton)
         
         addSubview(seperatorBottomView)
-        seperatorBottomView.edgesToSuperview(excluding: .bottom, insets: .init(top: 10, left: 0, bottom: 0, right: 0))
+        seperatorBottomView.edgesToSuperview(excluding: [.top, .bottom], insets: .init(top: 0, left: 0, bottom: 0, right: 0))
+        seperatorBottomView.topToBottom(of: contentStackView).constant = 10
         
         addSubview(okButtonAction)
         okButtonAction.topToBottom(of: seperatorBottomView)
         okButtonAction.centerXToSuperview()
     }
+}
+
+// MARK: - Configure And Localize
+extension SettingsView {
     
+    private func configureContents() {
+        seperatorTopView.height(1)
+        seperatorBottomView.height(1)
+        backgroundColor = .systemPink
+    }
+    
+    private func setLocalize() {
+        settingsTitleLabel.text = "Settings"
+        timeTitleLabel.text = "TIME (MINUTES)"
+        pomodoroTitleLabel.text = "Pomodoro"
+        shortBreakTitleLabel.text = "Short Break"
+        longBreakTitleLabel.text = "Long Break"
+        okButtonAction.setTitle("OK", for: .normal)
+    }
 }

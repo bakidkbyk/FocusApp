@@ -9,12 +9,12 @@ import UIKit
 
 final class AppRouter: Router, AppRouter.Routes {
     
-    typealias Routes = SettingsRoute
+    typealias Routes = HomeTabBarRoute
     
     static let shared = AppRouter()
     
     func startApp() {
-        presentSettings()
+        placeOnWindowTabBar()
     }
 
     private func topViewController() -> UIViewController? {

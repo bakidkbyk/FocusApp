@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let bounds = UIScreen.main.bounds
         self.window = UIWindow(frame: bounds)
         self.window?.makeKeyAndVisible()
-        AppRouter.shared.presentSettings()
+        AppRouter.shared.placeOnWindowTabBar()
         return true
     }
 

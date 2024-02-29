@@ -12,6 +12,11 @@
 		2D1983382B88779D009BC080 /* FocusApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D1983362B88779D009BC080 /* FocusApp.xcdatamodeld */; };
 		2D19833A2B88779F009BC080 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D1983392B88779F009BC080 /* Assets.xcassets */; };
 		2D19833D2B88779F009BC080 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D19833B2B88779F009BC080 /* LaunchScreen.storyboard */; };
+		2D3EEB7A2B90FE5E00D34FA2 /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3EEB772B90FE5E00D34FA2 /* HomeTabBarViewController.swift */; };
+		2D3EEB802B90FEAD00D34FA2 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3EEB7D2B90FEAD00D34FA2 /* HomeRouter.swift */; };
+		2D3EEB812B90FEAD00D34FA2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3EEB7E2B90FEAD00D34FA2 /* HomeViewController.swift */; };
+		2D3EEB822B90FEAD00D34FA2 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3EEB7F2B90FEAD00D34FA2 /* HomeViewModel.swift */; };
+		2D3EEB842B91015200D34FA2 /* HomeTabBarRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D3EEB832B91015200D34FA2 /* HomeTabBarRoute.swift */; };
 		2D5981C92B887FC700E85413 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5981C82B887FC700E85413 /* BaseViewController.swift */; };
 		2D5981CB2B887FDE00E85413 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5981CA2B887FDE00E85413 /* BaseViewModel.swift */; };
 		2D5981D12B88838600E85413 /* DismissableRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5981D02B88838600E85413 /* DismissableRoute.swift */; };
@@ -43,6 +48,11 @@
 		2D1983392B88779F009BC080 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D19833C2B88779F009BC080 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D19833E2B88779F009BC080 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D3EEB772B90FE5E00D34FA2 /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
+		2D3EEB7D2B90FEAD00D34FA2 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		2D3EEB7E2B90FEAD00D34FA2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2D3EEB7F2B90FEAD00D34FA2 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		2D3EEB832B91015200D34FA2 /* HomeTabBarRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarRoute.swift; sourceTree = "<group>"; };
 		2D5981C82B887FC700E85413 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		2D5981CA2B887FDE00E85413 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		2D5981D02B88838600E85413 /* DismissableRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissableRoute.swift; sourceTree = "<group>"; };
@@ -123,6 +133,25 @@
 			path = FocusApp;
 			sourceTree = "<group>";
 		};
+		2D3EEB752B90FE3F00D34FA2 /* HomeTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				2D3EEB772B90FE5E00D34FA2 /* HomeTabBarViewController.swift */,
+				2D3EEB832B91015200D34FA2 /* HomeTabBarRoute.swift */,
+			);
+			path = HomeTabBar;
+			sourceTree = "<group>";
+		};
+		2D3EEB7C2B90FEA000D34FA2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2D3EEB7D2B90FEAD00D34FA2 /* HomeRouter.swift */,
+				2D3EEB7E2B90FEAD00D34FA2 /* HomeViewController.swift */,
+				2D3EEB7F2B90FEAD00D34FA2 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		2D5981C42B887D3B00E85413 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +164,8 @@
 		2D5981C52B887D4800E85413 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				2D3EEB7C2B90FEA000D34FA2 /* Home */,
+				2D3EEB752B90FE3F00D34FA2 /* HomeTabBar */,
 				2D59820D2B88A23A00E85413 /* Settings */,
 				2D5981C72B887FAF00E85413 /* Base */,
 			);
@@ -379,24 +410,29 @@
 			files = (
 				2D5982102B88A25F00E85413 /* SettingsView.swift in Sources */,
 				2D59821B2B88B3D900E85413 /* SettingsRouter.swift in Sources */,
+				2D3EEB842B91015200D34FA2 /* HomeTabBarRoute.swift in Sources */,
 				2D5981DA2B8883E000E85413 /* PushTransition.swift in Sources */,
 				2D5981E72B88852D00E85413 /* Closures.swift in Sources */,
 				2D5981D62B8883B700E85413 /* ModalTransition.swift in Sources */,
 				2D5981D82B8883C900E85413 /* PlaceOnWindowTransition.swift in Sources */,
+				2D3EEB812B90FEAD00D34FA2 /* HomeViewController.swift in Sources */,
 				2D5981DC2B8883F400E85413 /* Transition.swift in Sources */,
 				2D5981CB2B887FDE00E85413 /* BaseViewModel.swift in Sources */,
 				2D59821F2B88B40300E85413 /* SettingsRoute.swift in Sources */,
 				2D5981E22B88843F00E85413 /* Animator.swift in Sources */,
 				2D5981D12B88838600E85413 /* DismissableRoute.swift in Sources */,
+				2D3EEB7A2B90FE5E00D34FA2 /* HomeTabBarViewController.swift in Sources */,
 				2D5981DF2B88840F00E85413 /* AppRouter.swift in Sources */,
 				2D8F82352B8FC9E2007B256E /* Focus+CoreDataClass.swift in Sources */,
 				2D59821C2B88B3D900E85413 /* SettingsViewController.swift in Sources */,
 				2D5981E42B88845400E85413 /* Router.swift in Sources */,
 				2D5981C92B887FC700E85413 /* BaseViewController.swift in Sources */,
 				2D19832E2B88779D009BC080 /* AppDelegate.swift in Sources */,
+				2D3EEB822B90FEAD00D34FA2 /* HomeViewModel.swift in Sources */,
 				2D1983382B88779D009BC080 /* FocusApp.xcdatamodeld in Sources */,
 				2D59821D2B88B3D900E85413 /* SettingsViewModel.swift in Sources */,
 				2D8F82342B8FC9E2007B256E /* Focus+CoreDataProperties.swift in Sources */,
+				2D3EEB802B90FEAD00D34FA2 /* HomeRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

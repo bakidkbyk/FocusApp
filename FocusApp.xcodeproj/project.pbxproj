@@ -31,6 +31,8 @@
 		2D59821C2B88B3D900E85413 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D5982192B88B3D900E85413 /* SettingsViewController.swift */; };
 		2D59821D2B88B3D900E85413 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D59821A2B88B3D900E85413 /* SettingsViewModel.swift */; };
 		2D59821F2B88B40300E85413 /* SettingsRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D59821E2B88B40300E85413 /* SettingsRoute.swift */; };
+		2D8F82342B8FC9E2007B256E /* Focus+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F82322B8FC9E2007B256E /* Focus+CoreDataProperties.swift */; };
+		2D8F82352B8FC9E2007B256E /* Focus+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8F82332B8FC9E2007B256E /* Focus+CoreDataClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,8 @@
 		2D5982192B88B3D900E85413 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		2D59821A2B88B3D900E85413 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		2D59821E2B88B40300E85413 /* SettingsRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRoute.swift; sourceTree = "<group>"; };
+		2D8F82322B8FC9E2007B256E /* Focus+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Focus+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2D8F82332B8FC9E2007B256E /* Focus+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Focus+CoreDataClass.swift"; sourceTree = "<group>"; };
 		C62711FE10D3F0CCF4703BF6 /* Pods-FocusApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FocusApp.release.xcconfig"; path = "Target Support Files/Pods-FocusApp/Pods-FocusApp.release.xcconfig"; sourceTree = "<group>"; };
 		C8869E4D55B4362FFD963B5F /* Pods_FocusApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FocusApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -105,6 +109,7 @@
 		2D19832C2B88779D009BC080 /* FocusApp */ = {
 			isa = PBXGroup;
 			children = (
+				2DA0AAFF2B8E7881008C68A4 /* CoreData */,
 				2D5981E52B88851600E85413 /* Closures */,
 				2D5981CE2B88832000E85413 /* Routing */,
 				2D5981C42B887D3B00E85413 /* UIComponents */,
@@ -235,6 +240,15 @@
 				2D5982122B88A58800E85413 /* Nunito-SemiBold.ttf */,
 			);
 			path = CustomFonts;
+			sourceTree = "<group>";
+		};
+		2DA0AAFF2B8E7881008C68A4 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				2D8F82332B8FC9E2007B256E /* Focus+CoreDataClass.swift */,
+				2D8F82322B8FC9E2007B256E /* Focus+CoreDataProperties.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		6CAF7193EC0E9C503B38384C /* Pods */ = {
@@ -375,12 +389,14 @@
 				2D5981E22B88843F00E85413 /* Animator.swift in Sources */,
 				2D5981D12B88838600E85413 /* DismissableRoute.swift in Sources */,
 				2D5981DF2B88840F00E85413 /* AppRouter.swift in Sources */,
+				2D8F82352B8FC9E2007B256E /* Focus+CoreDataClass.swift in Sources */,
 				2D59821C2B88B3D900E85413 /* SettingsViewController.swift in Sources */,
 				2D5981E42B88845400E85413 /* Router.swift in Sources */,
 				2D5981C92B887FC700E85413 /* BaseViewController.swift in Sources */,
 				2D19832E2B88779D009BC080 /* AppDelegate.swift in Sources */,
 				2D1983382B88779D009BC080 /* FocusApp.xcdatamodeld in Sources */,
 				2D59821D2B88B3D900E85413 /* SettingsViewModel.swift in Sources */,
+				2D8F82342B8FC9E2007B256E /* Focus+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

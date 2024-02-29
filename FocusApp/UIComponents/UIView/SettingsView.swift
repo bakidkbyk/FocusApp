@@ -40,7 +40,7 @@ public class SettingsView: UIView {
         .textColor(.white)
         .build()
     
-    private let pomodoroPickerButton = UIButtonBuilder()
+    private let pomodoroPickerTextField = UITextFieldBuilder()
         .backgroundColor(.red)
         .build()
     
@@ -54,9 +54,9 @@ public class SettingsView: UIView {
         .textColor(.white)
         .build()
     
-    private let shortBreakPickerButton = UIButtonBuilder()
+    private let shortBreakPickerTextField = UITextFieldBuilder()
         .backgroundColor(.red)
-        .button
+        .build()
     
     private let longBreakStackView = UIStackViewBuilder()
         .spacing(10)
@@ -68,7 +68,7 @@ public class SettingsView: UIView {
         .textColor(.white)
         .build()
     
-    private let longBreakPickerButton = UIButtonBuilder()
+    private let longBreakPickerTextField = UITextFieldBuilder()
         .backgroundColor(.red)
         .build()
     
@@ -92,6 +92,24 @@ public class SettingsView: UIView {
         addSubViews()
         configureContents()
         setLocalize()
+    }
+      
+    public var pomodoroTextCount: String? {
+        didSet {
+            pomodoroPickerTextField.text = pomodoroTextCount
+        }
+    }
+    
+    public var longBreakTextCount: String? {
+        didSet {
+            longBreakPickerTextField.text = longBreakTextCount
+        }
+    }
+    
+    public var shortBreakTextCount: String? {
+        didSet {
+            shortBreakPickerTextField.text = shortBreakTextCount
+        }
     }
 }
 
@@ -121,13 +139,13 @@ extension SettingsView {
         contentStackView.addArrangedSubview(longBreakStackView)
         
         pomodoroStackView.addArrangedSubview(pomodoroTitleLabel)
-        pomodoroStackView.addArrangedSubview(pomodoroPickerButton)
+        pomodoroStackView.addArrangedSubview(pomodoroPickerTextField)
         
         shortBreakStackView.addArrangedSubview(shortBreakTitleLabel)
-        shortBreakStackView.addArrangedSubview(shortBreakPickerButton)
+        shortBreakStackView.addArrangedSubview(shortBreakPickerTextField)
         
         longBreakStackView.addArrangedSubview(longBreakTitleLabel)
-        longBreakStackView.addArrangedSubview(longBreakPickerButton)
+        longBreakStackView.addArrangedSubview(longBreakPickerTextField)
         
         addSubview(seperatorBottomView)
         seperatorBottomView.edgesToSuperview(excluding: [.top, .bottom], insets: .init(top: 0, left: 0, bottom: 0, right: 0))
